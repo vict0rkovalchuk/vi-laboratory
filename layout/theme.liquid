@@ -8,10 +8,15 @@
     <link rel="canonical" href="{{ canonical_url }}">
     <meta name="viewport" content="width=device-width,initial-scale=1,shrink-to-fit=no">
 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="{{ 'style.css' | asset_url }}">
+
+    <script src="{{ 'script.js' | asset_url }}" defer></script>
+
     {{ content_for_header }}
-    
-    {{ 'style.css' | asset_url | stylesheet_tag }}
-    {{ 'script.js' | asset_url | script_tag }}
   </head>
   <body>
     <main role="main">
